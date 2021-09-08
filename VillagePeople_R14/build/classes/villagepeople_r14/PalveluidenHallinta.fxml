@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="688.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="villagepeople_r14.PalveluidenHallintaController">
+    <children>
+      <ImageView fitHeight="459.0" fitWidth="688.0">
+         <image>
+            <Image url="@../planks.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="51.0" layoutY="100.0" text="Palvelu ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="23.0" layoutY="14.0" text="Palveluiden hallinta">
+         <font>
+            <Font name="System Bold Italic" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="140.0" text="Nimi">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label alignment="TOP_LEFT" layoutX="50.0" layoutY="180.0" text="Toimipiste ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="50.0" layoutY="220.0" text="Hinta">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="50.0" layoutY="260.0" text="Alv">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="50.0" layoutY="300.0" text="Tyyppi">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="tfPalveluID" layoutX="147.0" layoutY="98.0" />
+      <TextField fx:id="tfNimi" layoutX="147.0" layoutY="138.0" prefWidth="149.0" />
+      <TextField fx:id="tfToimipisteID" layoutX="147.0" layoutY="176.0" prefHeight="25.0" prefWidth="206.0" promptText="Ei toimi ennenkuin mökki lisätty" />
+      <TextField fx:id="tfHinta" layoutX="147.0" layoutY="216.0" />
+      <TextField fx:id="tfAlv" layoutX="147.0" layoutY="256.0" />
+      <RadioButton fx:id="rdbtnSafari" layoutX="147.0" layoutY="300.0" mnemonicParsing="false" text="Safari">
+         <toggleGroup>
+            <ToggleGroup fx:id="tgTyyppi" />
+         </toggleGroup>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="rdbtnLiikunta" layoutX="209.0" layoutY="300.0" mnemonicParsing="false" text="Liikunta" toggleGroup="$tgTyyppi">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="rdbtnAjelu" layoutX="284.0" layoutY="300.0" mnemonicParsing="false" text="Hevos-/koiravaljakkoajelu" toggleGroup="$tgTyyppi">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></RadioButton>
+      <Button fx:id="btnLisaaTiedot" layoutX="543.0" layoutY="120.0" mnemonicParsing="false" onAction="#lisaaPalvelu" prefHeight="25.0" prefWidth="86.0" text="Lisää tiedot" />
+      <Button fx:id="btnPoistaTiedot" layoutX="543.0" layoutY="200.0" mnemonicParsing="false" onAction="#poistaPalvelu" prefHeight="25.0" prefWidth="86.0" text="Poista tiedot" />
+      <Button fx:id="btnMuutaTiedot" layoutX="543.0" layoutY="160.0" mnemonicParsing="false" onAction="#muutaPalvelu" text="Muuta tiedot" />
+      <Label layoutX="51.0" layoutY="340.0" text="Kuvaus">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextArea fx:id="taKuvaus" layoutX="147.0" layoutY="340.0" prefHeight="49.0" prefWidth="222.0" promptText="Lyhyt kuvaus palvelusta" />
+      <Button fx:id="btnSulje" layoutX="629.0" layoutY="417.0" mnemonicParsing="false" onAction="#suljeLomake" text="Sulje" />
+      <Button fx:id="btnHaePalvelunTiedot" layoutX="543.0" layoutY="250.0" mnemonicParsing="false" onAction="#haePalvelu" prefHeight="25.0" prefWidth="86.0" text="Hae tiedot" />
+      <Button fx:id="btnTyhjenna" layoutX="147.0" layoutY="405.0" mnemonicParsing="false" onAction="#tyhjennaLomake" text="Tyhjennä lomake" />
+    </children>
+</AnchorPane>

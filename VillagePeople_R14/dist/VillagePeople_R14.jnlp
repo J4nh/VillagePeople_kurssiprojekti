@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="VillagePeople_R14.jnlp">
+  <information>
+    <title>VillagePeople_R14</title>
+    <vendor>janih</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="VillagePeople_R14.jar" size="280366" download="eager" />
+    <jar href="lib\mariadb-java-client-2.5.4.jar" size="616389" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="villagepeople_r14.VillagePeople_R14"  name="VillagePeople_R14" />
+  <update check="always"/>
+</jnlp>
