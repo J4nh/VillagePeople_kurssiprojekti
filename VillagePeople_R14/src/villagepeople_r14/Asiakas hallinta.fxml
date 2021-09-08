@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="487.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="villagepeople_r14.AsiakashallintaController">
+   <children>
+      <ImageView fitHeight="489.0" fitWidth="693.0" layoutX="-11.0">
+         <image>
+            <Image url="@../planks.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="32.0" layoutY="14.0" text="Asiakas hallinta">
+         <font>
+            <Font name="System Bold Italic" size="43.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="100.0" text="Asiakas ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="130.0" text="Etunimi">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="160.0" text="Sukunimi">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="220.0" text="Lähiosoite">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="250.0" text="Postitoimipaikka">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="280.0" text="Postinumero">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="310.0" text="Email">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="340.0" text="Puhelinnro">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      
+      <TextField fx:id="tfAsiakasID" layoutX="168.0" layoutY="100.0" />
+      <TextField fx:id="tfEtunimi" layoutX="168.0" layoutY="130.0" />
+      <TextField fx:id="tfSukunimi" layoutX="168.0" layoutY="160.0" />
+      <TextField fx:id="tfLahiosoite" layoutX="168.0" layoutY="220.0" />
+      <TextField fx:id="tfPostitoimipaikka" layoutX="168.0" layoutY="250.0" />
+      <TextField fx:id="tfPostinro" layoutX="168.0" layoutY="280.0" />
+      <TextField fx:id="tfEmail" layoutX="168.0" layoutY="310.0" />
+      <TextField fx:id="tfPuhelinnro" layoutX="168.0" layoutY="340.0" />
+
+
+      <Button fx:id="btnLisaaTiedot" layoutX="479.0" layoutY="170.0" mnemonicParsing="false" onAction="#lisaaAsiakas" prefHeight="25.0" prefWidth="165.0" text="Lisää tiedot" />
+      <Button fx:id="btnMuutaTiedot" layoutX="479.0" layoutY="210.0" mnemonicParsing="false" onAction="#muutaAsiakas" prefHeight="25.0" prefWidth="165.0" text="Muuta tiedot" />
+      <Button fx:id="btnPoistaTiedot" layoutX="479.0" layoutY="250.0" mnemonicParsing="false" onAction="#poistaAsiakas" prefHeight="25.0" prefWidth="165.0" text="Poista tiedot" />
+
+      <Button fx:id="btnSulje" layoutX="614.0" layoutY="448.0" mnemonicParsing="false" onAction="#suljeLomake" text="Sulje" />
+      <Button layoutX="168.0" layoutY="423.0" mnemonicParsing="false" onAction="#tyhjennaLomake" text="Tyhjennä lomake" />
+      <Button layoutX="479.0" layoutY="310.0" mnemonicParsing="false" onAction="#haeAsiakas" prefHeight="25.0" prefWidth="165.0" text="Hae tiedot" />
+      
+   </children>
+</AnchorPane>
